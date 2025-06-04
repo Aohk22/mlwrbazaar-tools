@@ -72,4 +72,8 @@ $ ll *.zip
 -rw-rw-r-- 1 remnux remnux 40 Jun  4 07:44 989db46562126cd83b6148da103cb17d770ed14c5a09b899bd225e77ff1b054d.zip
 ```
 
-Verifying that the download is actually correct:  
+Verifying that the download is actually correct (run hash on extracted file):  
+```bash
+$ sha256sum 0379d402a94f960380d7d91e3bfa106eeac01cd39ae7b0ba5010ba737088a215.exe 
+0379d402a94f960380d7d91e3bfa106eeac01cd39ae7b0ba5010ba737088a215  0379d402a94f960380d7d91e3bfa106eeac01cd39ae7b0ba5010ba737088a215.exe
+```
