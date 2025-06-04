@@ -48,7 +48,7 @@ def main():
     res = requests.post(api_url, data=data, headers=headers)
  
     response_output = 'mb-response.json'
-    with open(args.output, 'w') as file:
+    with open(response_output, 'w') as file:
         file.write(res.text)
         print(f'Query response is  written to {response_output}')
 
