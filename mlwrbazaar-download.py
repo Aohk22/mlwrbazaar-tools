@@ -18,6 +18,7 @@ def parse_arguments():
 
 
 def download_from_hash(url: str, headers: dict, data: dict, h: str):
+    data['sha256_hash'] = h
     res = requests.post(url, data=data, timeout=15, headers=headers)
     raw_data = res.content
     with open(f'{h}.zip', 'wb') as zipfile:
